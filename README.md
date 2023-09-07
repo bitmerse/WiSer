@@ -2,6 +2,8 @@
 
 Experience seamless wireless serial connectivity with WiSer, a powerful set of two devices designed to facilitate a serial connection between your PC and embedded devices. Say goodbye to cumbersome USB cables and enjoy the freedom of wireless communication.
 
+![wiser](https://github.com/bitmerse/WiSer/assets/87270487/9010d92a-c1f4-4092-b60b-d2830cd68efb)
+
 # Repository contents
   - **/docs** - Documentation resources (Licensed under [CC BY-SA 4.0](docs/LICENSE))
   - **/hw** - Board design files (Licensed under [CERN-OHL-P-2.0](hw/LICENSE))
