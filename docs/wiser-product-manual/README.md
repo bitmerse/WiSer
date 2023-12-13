@@ -13,6 +13,7 @@ We understand that connectivity requirements vary, which is why we offer multipl
 * **Seamless Wireless Connectivity:** WiSer provides a reliable wireless connection, eliminating the limitations of traditional wired setups, and allowing you to move around while maintaining an uninterrupted connection. Connect your PC and embedded devices wirelessly for ultimate convenience.
 * **Hassle-Free Setup:** WiSer's plug-and-play nature ensures a quick and effortless setup, saving you time and effort. **WiSer doesn’t require any software or driver installation.**
 * **Reliable Cord-Free Serial Communication:** WiSer ensures stable and efficient wireless serial communication for various applications. Say goodbye to tangled cables and enjoy the freedom of wireless connectivity.
+* **Secure Data Transfer:** WiSer ensures data protection using AES-CCMP encryption.
 * **Complete Electrical Isolation:** WiSer provides full electrical isolation between your embedded device and PC, a distinctive feature absent in conventional USB-TTL converters.
 * **Compatibility and Convenience:** Designed to be compatible with a wide range of devices and operating systems, WiSer offers versatility and ease of use.
 * **High Performance:** WiSer delivers reliable and fast communication for tasks such as debugging, logging, firmware updates, and data transfer over the serial port.
