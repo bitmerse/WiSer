@@ -22,7 +22,7 @@ The **‘Find Pair'** button on WiSer serves a multi-functional role, facilitati
 * **Flashing FAST:** A prolonged press triggers the RTS/CTS hardware flow control activation. Both paired devices respond by rapidly flashing the CONN LED for 5 seconds, indicating that the hardware flow control is now enabled. In this mode, the ESP32-S2 chip on WiSer-TTL utilizes the RTS and CTS pins for hardware flow control.
 * **Flashing SLOW:** Another long press deactivates the RTS/CTS hardware flow control. In response, both paired devices exhibit a slow flash of the CONN LED for 5 seconds, signaling that the hardware flow control is now disabled. In this mode, the RTS and DTR pins can serve as general-purpose I/Os, controllable via USB requests from the host system.
 
-In summary, the 'Find Pair' button provides a convenient way to manage and identify paired WiSer devices, as well as to toggle the RTS/CTS hardware flow control functionality based on the duration of the button press. Upon initial power-up, the WiSer device has hardware flow control disabled by default.
+In summary, the 'Find Pair' button provides a convenient way to manage and identify paired WiSer devices, as well as to toggle the RTS/CTS hardware flow control functionality based on the duration of the button press. Upon initial power-up, the WiSer device has **hardware flow control deactivated by default.**
 
 The **‘Boot button’** serves the purpose of flashing firmware on the ESP32-S2 chip within the WiSer-USB device.
 
