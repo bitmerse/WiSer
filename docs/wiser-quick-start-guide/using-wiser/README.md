@@ -2,7 +2,7 @@
 
 WiSer simplifies the process of establishing wireless serial communication between your PC or device and embedded devices. Here, we'll walk you through the straightforward steps for effectively utilizing WiSer.
 
-### WiSer Devices Connection Setup <a href="#_toc150171914" id="_toc150171914"></a>
+### WiSer Devices Connection Setup <a href="#toc150171914" id="toc150171914"></a>
 
 See the [WiSer Setup](../wiser-setup/) section for detailed information about the setup and powering up of the devices.
 
@@ -18,13 +18,13 @@ Use this SKU variant for communication between your host system and embedded dev
 
 <figure><img src="../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
 
-#### WiSer WS-UU-EN variant <a href="#_toc150171915" id="_toc150171915"></a>
+#### WiSer WS-UU-EN variant <a href="#toc150171915" id="toc150171915"></a>
 
 Use this SKU variant for communication between 2 host systems as shown in the diagram below.
 
 <figure><img src="../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
-### Accessing the Serial Port <a href="#_toc150171916" id="_toc150171916"></a>
+### Accessing the Serial Port <a href="#toc150171916" id="toc150171916"></a>
 
 Once the WiSer devices are connected, a virtual serial port will be automatically generated on your PC. Verify serial port in the Device Manager of your PC. You can access it through your preferred terminal software or even any custom software you've developed.
 
@@ -36,7 +36,7 @@ Once the WiSer devices are connected, a virtual serial port will be automaticall
 
 <figure><img src="../.gitbook/assets/25.png" alt=""><figcaption></figcaption></figure>
 
-### Baud Rate Configuration <a href="#_toc150171917" id="_toc150171917"></a>
+### Baud Rate Configuration <a href="#toc150171917" id="toc150171917"></a>
 
 WiSer accommodates various baud rates to meet your communication requirements, whether they are standard or non-standard, with a maximum speed of 921,600 baud. Baud rate configuration can be conveniently adjusted within your terminal software.
 
@@ -48,7 +48,7 @@ By confirming that both the host system and the embedded device share the same b
 
 ![](../.gitbook/assets/5.png)
 
-### Flow Control Options <a href="#_toc150171918" id="_toc150171918"></a>
+### Flow Control Options <a href="#toc150171918" id="toc150171918"></a>
 
 WiSer is equipped with hardware flow control, specifically RTS/CTS, ensuring a dependable data transmission process. To align with your application's requirements, configure your terminal software to integrate flow control. To activate RTS/CTS hardware flow control, press and hold the 'Find Pair' button for more than 2 seconds. This action triggers fast flashing of the CONN LED for 5 seconds, indicating the enabled status. Similarly, a prolonged press on the 'Find Pair' button for more than 2 seconds deactivates the RTS/CTS flow control, signaled by slow flashing of the CONN LED for 5 seconds. It's important to note that flow control is not supported for the WiSer WS-UU-EN variant.
 
@@ -58,7 +58,7 @@ WiSer is equipped with hardware flow control, specifically RTS/CTS, ensuring a d
 
 ![](../.gitbook/assets/6.png)
 
-### DTR Control Signal <a href="#_toc150171919" id="_toc150171919"></a>
+### DTR Control Signal <a href="#toc150171919" id="toc150171919"></a>
 
 WiSer also provides the DTR (Data Terminal Ready) control signal, which is crucial for call control in devices like data modems. It signifies that the terminal is prepared for communication. If your target embedded device supports DTR signal, then connect WiSer-TTL’s DTR to your target device and control it using your favorite serial terminal software or custom application. DTR control signal is not supported for WiSer WS-UU-EN variant.
 
@@ -80,7 +80,7 @@ WiSer provides configuring Data Bit, Parity Type, and Stop Bits settings from yo
 
 ![](../.gitbook/assets/8.png)
 
-### Initiating Serial Communication <a href="#_toc150171920" id="_toc150171920"></a>
+### Initiating Serial Communication <a href="#toc150171920" id="toc150171920"></a>
 
 You can now commence serial communication between your PC and the embedded device. For specific communication settings, please consult the user manual of your embedded device.
 
@@ -94,7 +94,7 @@ Ensure that the serial port settings align with those of your target embedded de
 
 ![](../.gitbook/assets/10.png)
 
-#### WiSer WS-UT-BM/EN variant <a href="#_toc150171921" id="_toc150171921"></a>
+#### WiSer WS-UT-BM/EN variant <a href="#toc150171921" id="toc150171921"></a>
 
 * Following image demonstrates the setup of WiSer devices with host system and Raspberry Pi (Embedded Device)
 
@@ -108,7 +108,7 @@ Ensure that the serial port settings align with those of your target embedded de
 
 ![](../.gitbook/assets/13.png)
 
-#### WiSer WS-UU-EN variant <a href="#_toc150171922" id="_toc150171922"></a>
+#### WiSer WS-UU-EN variant <a href="#toc150171922" id="toc150171922"></a>
 
 * Following image demonstrates 2 host systems communicating wirelessly using WiSer devices. It shows serial terminal of Host PC-1 and Host PC-2.
 

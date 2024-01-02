@@ -1,8 +1,8 @@
 # WiSer Setup
 
-### WiSer Devices connection setup <a href="#_toc150171902" id="_toc150171902"></a>
+### WiSer Devices connection setup <a href="#toc150171902" id="toc150171902"></a>
 
-#### WS-UT-BM Variant <a href="#_toc150171903" id="_toc150171903"></a>
+#### WS-UT-BM Variant <a href="#toc150171903" id="toc150171903"></a>
 
 **Connecting WiSer-USB**
 
@@ -34,7 +34,7 @@
 
 <figure><img src="../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
 
-#### WS-UU-EN Variant <a href="#_toc150171904" id="_toc150171904"></a>
+#### WS-UU-EN Variant <a href="#toc150171904" id="toc150171904"></a>
 
 **Connecting WiSer-USB**
 
@@ -43,9 +43,9 @@
 
 ![](<../.gitbook/assets/4 (1).png>)
 
-### Powering On the Devices <a href="#_toc150171905" id="_toc150171905"></a>
+### Powering On the Devices <a href="#toc150171905" id="toc150171905"></a>
 
-#### WiSer-USB <a href="#_toc150171906" id="_toc150171906"></a>
+#### WiSer-USB <a href="#toc150171906" id="toc150171906"></a>
 
 There is only 1 way to provide power to the WiSer-USB board:
 
@@ -61,17 +61,17 @@ There are three mutually exclusive ways to provide power to the WiSer-TTL board:
 
 This versatility in powering options allows you to choose the method that best suits your setup and project requirements.
 
-### LED Indicators <a href="#_toc150171908" id="_toc150171908"></a>
+### LED Indicators <a href="#toc150171908" id="toc150171908"></a>
 
 WiSer devices are equipped with LED status indicators to convey essential information.
 
-#### Rx and Tx LED <a href="#_toc150171909" id="_toc150171909"></a>
+#### Rx and Tx LED <a href="#toc150171909" id="toc150171909"></a>
 
 These LEDs illuminate when active serial communication is established between devices, providing visual confirmation of data transfer.
 
 ![](<../.gitbook/assets/5 (1).png>)
 
-#### CONN LED <a href="#_toc150171910" id="_toc150171910"></a>
+#### CONN LED <a href="#toc150171910" id="toc150171910"></a>
 
 This LED activates when you press the 'Find Pair' button on the WiSer-USB device.
 
