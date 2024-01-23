@@ -10,11 +10,11 @@ WiSer offers different package variants to suit your specific needs. Please revi
 
 Select the package variant that best fits your project/product requirements. If you have any questions about the package contents or need assistance, please feel free to [reach out to our customer support team.](mailto:support@bitmerse.com)
 
-### What's Included <a href="#_toc150171888" id="_toc150171888"></a>
+### What's Included <a href="#toc150171888" id="toc150171888"></a>
 
 Your selected WiSer SKU Variant includes the following components:
 
-#### WS-UT-BM Variant <a href="#_toc150171889" id="_toc150171889"></a>
+#### WS-UT-BM Variant <a href="#toc150171889" id="toc150171889"></a>
 
 * WiSer-USB Device with Enclosure
 * WiSer-TTL Device
@@ -25,7 +25,7 @@ Your selected WiSer SKU Variant includes the following components:
 
 ![](../.gitbook/assets/0.jpeg)
 
-#### WS-UT-EN Variant <a href="#_toc150171890" id="_toc150171890"></a>
+#### WS-UT-EN Variant <a href="#toc150171890" id="toc150171890"></a>
 
 * WiSer-USB Device with Enclosure
 * WiSer-TTL Device with Enclosure (with header pins mounted)
@@ -35,7 +35,7 @@ Your selected WiSer SKU Variant includes the following components:
 
 ![](../.gitbook/assets/1.jpeg)
 
-#### WS-UU-EN Variant <a href="#_toc150171891" id="_toc150171891"></a>
+#### WS-UU-EN Variant <a href="#toc150171891" id="toc150171891"></a>
 
 * 2 WiSer-USB Devices with Enclosure
 * Quick Start Guide
@@ -44,11 +44,3 @@ Your selected WiSer SKU Variant includes the following components:
 
 Ensure that all items are present in your package before proceeding.
 
-### Add-Ons <a href="#_toc150171892" id="_toc150171892"></a>
-
-WiSer devices offer a range of convenient add-ons to enhance your user experience. These add-ons are designed to provide protection to your WiSer devices.
-
-| **Variant Name** | **Description**                            |
-| ---------------- | ------------------------------------------ |
-| WS-AO-U-EN       | 3D printed enclosure for WiSer-USB device. |
-| WS-AO-T-EN       | 3D printed enclosure for WiSer-TTL device. |
