@@ -6,7 +6,6 @@
   * [List of Potential applications using WiSer](README.md#\_toc150171886)
 * [Package Contents](package-contents/README.md)
   * [What's Included](package-contents/README.md#\_toc150171888)
-  * [Add-Ons](package-contents/README.md#\_toc150171892)
 * [Getting Started](getting-started/README.md)
   * [Device Overview](getting-started/README.md#\_toc150171894)
   * [System Requirements](getting-started/README.md#\_toc150171897)
