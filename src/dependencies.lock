@@ -1,0 +1,9 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.0.2
+manifest_hash: e2b88eca3b09ee55182e9998d3bde5847316d4ea83f562d3da072bc189087bca
+target: esp32s2
+version: 1.0.0
