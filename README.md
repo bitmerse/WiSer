@@ -5,7 +5,7 @@ Experience seamless wireless serial connectivity with **WiSer**, a powerful set 
 ![DSC_1522_1](https://github.com/bitmerse/WiSer/assets/6021718/171ff8f4-fd6d-4ad0-8b3e-f40dc9aa29e4)
 
 ### Connection Diagram
-![WiSer-Connection](https://github.com/bitmerse/WiSer/assets/6021718/eb8f5d27-f75d-4751-bf80-d7085f03b8ac)
+![WiSer-Connection](https://github.com/bitmerse/WiSer/assets/6021718/cef92b53-6f0a-4ab4-91e2-70a3942ac039)
 
 WiSer is a fully **Open Source** project. All hardware design files, firmware source code, and documentation are made available so you can inspect its inner workings. Our goal is to empower users, making it easy to program, understand, customize, and troubleshoot WiSer.
 
