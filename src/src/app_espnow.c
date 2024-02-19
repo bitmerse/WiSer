@@ -63,10 +63,29 @@
  * @{
  */
 
+
+#define APP_ESPNOW_BROADCAST_ENABLE CONFIG_ESPNOW_BROADCAST_ENABLE
+
+#if APP_ESPNOW_BROADCAST_ENABLE
+#define APP_ESPNOW_ENCYYPTION_ENABLE    0
+#else
+#if CONFIG_ESPNOW_ENCRYPTION_ENABLE
 #define APP_ESPNOW_ENCYYPTION_ENABLE    1
+#else
+#define APP_ESPNOW_ENCYYPTION_ENABLE    0
+#endif
+#endif
 
 // 0 for default peer mac, 1 for peer mac from NVS memory
+#if APP_ESPNOW_BROADCAST_ENABLE
+#define APP_ESPNOW_USE_NVS_PEER_MAC    0
+#else
+#if CONFIG_ESPNOW_USE_NVS_PEER_MAC
 #define APP_ESPNOW_USE_NVS_PEER_MAC    1
+#else
+#define APP_ESPNOW_USE_NVS_PEER_MAC    0
+#endif
+#endif
 
 #define ESPNOW_MAXDELAY 512
 
@@ -114,7 +133,11 @@ static bool esp_now_send_status = false;
 /**
  * @brief default peer mac address
  */
+#if APP_ESPNOW_USE_NVS_PEER_MAC
+static uint8_t s_app_peer_mac[ESP_NOW_ETH_ALEN] = { 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF };
+#else
 static uint8_t s_app_peer_mac[ESP_NOW_ETH_ALEN] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+#endif
 
 static uint8_t app_espnow_tx_ser_count = APP_ESPNOW_TX_SER_COUNT_DEFAULT;
 static uint8_t app_espnow_rx_ser_count = APP_ESPNOW_RX_SER_COUNT_DEFAULT;
@@ -365,7 +388,11 @@ static void IRAM_ATTR app_espnow_task(void *pvParameter)
                 app_espnow_event_recv_cb_t *recv_cb = &evt.info.recv_cb;
                 
                 // ESP_LOGI(TAG, "Receive error data from: "MACSTR"", MAC2STR(recv_cb->mac_addr));    
+#if APP_ESPNOW_BROADCAST_ENABLE
+                if(true) {
+#else
                 if(memcmp(recv_cb->mac_addr, s_app_peer_mac, 6) == 0) {
+#endif
                     switch(recv_cb->type) {
                         case APP_ESPNOW_TYPE_DATA: {
                             #if DEVICE_WISER_USB
@@ -737,8 +764,9 @@ void app_espnow_init(void)
     // Initialize NVS
     nvs_peer_init();
 #if APP_ESPNOW_USE_NVS_PEER_MAC
+    nvs_peer_open();
     nvs_peer_read(s_app_peer_mac);
-    nvs_peer_deinit();
+    nvs_peer_close();
 #endif
     ESP_LOGE(TAG, "peer mac address - %02x:%02x:%02x:%02x:%02x:%02x", s_app_peer_mac[0], s_app_peer_mac[1],s_app_peer_mac[2],s_app_peer_mac[3],s_app_peer_mac[4],s_app_peer_mac[5]);
 

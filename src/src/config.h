@@ -56,6 +56,15 @@
 /* select device mode to either DEVICE_CONFIG_MODE_USB or DEVICE_CONFIG_MODE_UART */
 #define DEVICE_CONFIG_MODE  DEVICE_CONFIG_MODE_NONE
 
+/* assign 1 to Broadcast messages to all devices and 0 for continue communication between only paired device */
+#define CONFIG_ESPNOW_BROADCAST_ENABLE     0
+
+/* assign 1 to enable the encryption and 0 to disable (CONFIG_ESPNOW_BROADCAST_ENABLE must be disabled to enable encryption)*/
+#define CONFIG_ESPNOW_ENCRYPTION_ENABLE    1
+
+/* assign 1 to use prepaired devices in produciton (CONFIG_ESPNOW_BROADCAST_ENABLE must be disabled to use prepaired devices)*/
+#define CONFIG_ESPNOW_USE_NVS_PEER_MAC     1
+
 /** @} */ // End of config_define group
 
 /**

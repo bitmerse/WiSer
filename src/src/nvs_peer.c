@@ -80,52 +80,6 @@ nvs_handle_t my_handle;
  * @{
  */
 
-/**
- * @brief opens nvs memory storage handle
- *
- */
-static void nvs_peer_open();
-
-/**
- * @brief closes nvs memory storage handle
- *
- */
-static void nvs_peer_close();
-
-
-/**
- * @brief opens nvs memory storage handle
- *
- */
-static void nvs_peer_open()
-{
-    // Open
-    esp_err_t err;
-     // Open
-    printf("\n");
-    printf("Opening Non-Volatile Storage (NVS) handle... ");
-    err = nvs_open("peer_info", NVS_READWRITE, &my_handle);
-    if (err != ESP_OK) {
-        printf("Error (%s) opening NVS handle!\n", esp_err_to_name(err));
-        my_handle = NULL;
-    } else {
-        printf("Done\n");
-    }
-}
-
-/**
- * @brief closes nvs memory storage handle
- *
- */
-static void nvs_peer_close()
-{
-    // Close
-    esp_err_t err;
-    if(my_handle != NULL) {
-        nvs_close(my_handle);
-        err = nvs_commit(my_handle);
-    }
-}
 
 /** @} */ // End of nvs_peer_static_funcs group
 
@@ -147,8 +101,6 @@ void nvs_peer_init()
         printf("NVS flash init failed");
     }
     ESP_ERROR_CHECK( err );
-
-    nvs_peer_open();
 }
 
 /**
@@ -185,6 +137,40 @@ void nvs_peer_read(uint8_t *mac)
             default :
                 printf("Error (%s) reading!\n", esp_err_to_name(err));
         }
+    }
+}
+
+/**
+ * @brief opens nvs memory storage handle
+ *
+ */
+void nvs_peer_open()
+{
+    // Open
+    esp_err_t err;
+     // Open
+    printf("\n");
+    printf("Opening Non-Volatile Storage (NVS) handle... ");
+    err = nvs_open("peer_info", NVS_READWRITE, &my_handle);
+    if (err != ESP_OK) {
+        printf("Error (%s) opening NVS handle!\n", esp_err_to_name(err));
+        my_handle = NULL;
+    } else {
+        printf("Done\n");
+    }
+}
+
+/**
+ * @brief closes nvs memory storage handle
+ *
+ */
+void nvs_peer_close()
+{
+    // Close
+    esp_err_t err;
+    if(my_handle != NULL) {
+        nvs_close(my_handle);
+        err = nvs_commit(my_handle);
     }
 }
 

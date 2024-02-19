@@ -12,10 +12,10 @@ This directory contains the WiSer project source code built using the PlatformIO
 
 ## Configuration MACROS
 
-1. Before compilation, change the value of "DEVICE_CONFIG_MODE" to either "DEVICE_CONFIG_MODE_USB" for WiSer-USB
-   or "DEVICE_CONFIG_MODE_UART" for WiSer-UART in `config.h`.
-2. Change the value of "APP_ESPNOW_USE_NVS_PEER_MAC" to either 0 to use the default peer MAC address stored in "s_app_peer_mac"
-   or 1 to use the pre-paired peer MAC address stored in the NVS memory during production.
+1. Before compilation, it is required to change the value of "DEVICE_CONFIG_MODE" to either "DEVICE_CONFIG_MODE_USB" for WiSer-USB or "DEVICE_CONFIG_MODE_UART" for WiSer-UART in `config.h`.
+2. change the value of "CONFIG_ESPNOW_BROADCAST_ENABLE" to 1 to enable the brodcast mode in `config.h`. By default, broadcast mode is disabled.
+3. change the value of "CONFIG_ESPNOW_ENCRYPTION_ENABLE" to 0 to disable the encryption of data in `config.h`. By default, encyption is enabled in th device.
+4. Change the value of "CONFIG_ESPNOW_USE_NVS_PEER_MAC" to 0 in `config.h` to use the default peer MAC address stored in variable "s_app_peer_mac" in `app_espnow.c`. By default, device will use the pre-paired peer MAC address stored in the NVS memory during production.
 
 ### Notes
 

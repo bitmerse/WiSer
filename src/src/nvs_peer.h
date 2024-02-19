@@ -77,6 +77,18 @@ void nvs_peer_init();
 void nvs_peer_deinit();
 
 /**
+ * @brief opens nvs memory storage handle
+ *
+ */
+void nvs_peer_open();
+
+/**
+ * @brief closes nvs memory storage handle
+ *
+ */
+void nvs_peer_close();
+
+/**
  * @brief reads peer MAC address from NVS memory
  *
  * @param mac pointer to peer mac address
