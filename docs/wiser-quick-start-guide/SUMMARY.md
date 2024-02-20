@@ -16,4 +16,5 @@
   * [DTR Control Signal](using-wiser/README.md#\_toc150171919)
   * [Data bit, Parity and Stop bits](using-wiser/README.md#data-bit-parity-and-stop-bits)
   * [Initiating Serial Communication](using-wiser/README.md#\_toc150171920)
+* [Broadcast Mode (Optional)](broadcast-mode-optional.md)
 * [Troubleshooting](troubleshooting.md)
