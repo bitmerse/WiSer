@@ -19,4 +19,5 @@ This directory contains the WiSer project source code built using the PlatformIO
 
 ### Notes
 
-`platformio.ini` contains your project settings. More information about this file can be found [here](https://docs.platformio.org/en/stable/projectconf/index.html).
+1. By default, WiSer devices are equipped with firmware that includes pre-paired devices, facilitating secure point-to-point wireless serial communication with data encryption enabled. Please be aware that the Broadcast mode is disabled by default.
+2. `platformio.ini` contains your project settings. More information about this file can be found [here](https://docs.platformio.org/en/stable/projectconf/index.html).
