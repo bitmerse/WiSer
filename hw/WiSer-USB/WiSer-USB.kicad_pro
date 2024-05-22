@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -61,7 +61,21 @@
           "width": 0.65
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|104047500|87727500|c6a7f721-dfb2-4e9b-8bd0-612f575dc1fb|208c05b3-d710-4328-bd99-17ab4839d2d6",
+        "clearance|104150000|87830000|be87241a-b5b1-4a0e-890c-30d62d1adc2f|208c05b3-d710-4328-bd99-17ab4839d2d6",
+        "clearance|104150000|87850000|38c94773-833f-4f2c-bf5a-a085ca56b87c|208c05b3-d710-4328-bd99-17ab4839d2d6",
+        "clearance|104150000|88300000|26fa2f6a-7784-4d99-b5b1-875236b20315|208c05b3-d710-4328-bd99-17ab4839d2d6",
+        "clearance|104150000|88300000|d9755755-16de-4d21-bee7-d108328171b7|208c05b3-d710-4328-bd99-17ab4839d2d6",
+        "clearance|104550000|88230000|1dc30a7a-cb8f-4760-a03f-36a73c97586b|fec6cac5-7295-41c2-9802-7b8edaa04814",
+        "clearance|104550000|88230000|8915d3ba-5ec0-4f1a-87d7-2269025d3d2e|fec6cac5-7295-41c2-9802-7b8edaa04814",
+        "clearance|92115000|91340000|217de33c-1631-4e6b-a5fe-f6252bc5a60f|4bee7407-284c-403f-9a1d-625e91cf19c4",
+        "clearance|92115000|91340000|a82ed55d-ecdb-4c52-a686-ab17bbd91896|4bee7407-284c-403f-9a1d-625e91cf19c4",
+        "clearance|92525000|91750000|1332b9f2-710a-49d6-a55b-4b77c8634b09|4bee7407-284c-403f-9a1d-625e91cf19c4",
+        "clearance|92600000|91587500|219191f0-ad09-4664-adc3-4b58685f6a40|4bee7407-284c-403f-9a1d-625e91cf19c4",
+        "solder_mask_bridge|104150000|88300000|208c05b3-d710-4328-bd99-17ab4839d2d6|d9755755-16de-4d21-bee7-d108328171b7",
+        "solder_mask_bridge|104550000|88230000|fec6cac5-7295-41c2-9802-7b8edaa04814|8915d3ba-5ec0-4f1a-87d7-2269025d3d2e"
+      ],
       "meta": {
         "version": 2
       },
@@ -136,7 +150,7 @@
         "min_via_diameter": 0.44999999999999996,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -186,7 +200,8 @@
         0.2,
         0.25,
         0.3,
-        0.5
+        0.5,
+        0.8
       ],
       "via_dimensions": [
         {
@@ -486,8 +501,8 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -496,7 +511,7 @@
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3493,
+        "track_width": 0.29337,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -504,16 +519,16 @@
       {
         "bus_width": 12,
         "clearance": 0.15,
-        "diff_pair_gap": 0.15,
+        "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2395,
+        "diff_pair_width": 0.261112,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2395,
+        "track_width": 0.261112,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -539,7 +554,15 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "/LNA_IN": "rgb(0, 255, 0)",
+      "/USB+": "rgb(0, 255, 0)",
+      "/USB-": "rgb(0, 255, 0)",
+      "/USB_CONN+": "rgb(0, 255, 0)",
+      "/USB_CONN-": "rgb(0, 255, 0)",
+      "Net-(C17-Pad1)": "rgb(0, 255, 0)",
+      "Net-(C19-Pad1)": "rgb(0, 255, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
       {
@@ -581,6 +604,14 @@
       {
         "netclass": "3V3 power",
         "pattern": "/VDD_SPI"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "*C19-Pad1*"
+      },
+      {
+        "netclass": "USB Data",
+        "pattern": "*USB_FIL*"
       }
     ]
   },

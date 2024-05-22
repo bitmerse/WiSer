@@ -3,6 +3,9 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_fields": false,
+        "apply_defaults_to_fp_shapes": false,
+        "apply_defaults_to_fp_text": false,
         "board_outline_line_width": 0.09999999999999999,
         "copper_line_width": 0.19999999999999998,
         "copper_text_italic": false,
@@ -34,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.7,
-          "width": 6.438
+          "drill": 0.0,
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,7 +59,21 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "copper_edge_clearance|102730001|107000000|31b8e65e-2229-4363-ba36-b33d7843aa24|c446aae4-1904-4924-87bb-d3062289e5a0",
+        "copper_edge_clearance|102730002|76999999|194c8070-e648-450f-a463-869fddad1f10|2dd0ccc4-da71-47ef-82c3-1ff01fe9bdc5",
+        "copper_edge_clearance|105270001|107000000|31b8e65e-2229-4363-ba36-b33d7843aa24|9951b5bf-aeb2-4d1f-aabf-7ab64fd2ab9c",
+        "copper_edge_clearance|105270002|76999998|194c8070-e648-450f-a463-869fddad1f10|8de0ed7b-8b2f-4576-ab6c-9bbe9d5da834",
+        "courtyards_overlap|113239000|88060002|864ea186-dc86-42ee-8ef5-e3e68e792fa1|dae925a8-af1c-45c8-8eeb-0331b4954f68",
+        "courtyards_overlap|113239000|89760002|31de794c-3f96-4d2f-81cb-67e63fb7cba7|dae925a8-af1c-45c8-8eeb-0331b4954f68",
+        "courtyards_overlap|113239000|93140002|dae925a8-af1c-45c8-8eeb-0331b4954f68|f44c1cfd-52f3-423a-bd42-9313f7dde5a9",
+        "courtyards_overlap|113239000|94840002|89ce277a-a4f6-47ba-b2cd-aa4a59024e32|dae925a8-af1c-45c8-8eeb-0331b4954f68",
+        "courtyards_overlap|113239000|98220002|55e7b126-b0b0-48b1-8e4c-0be76799b049|dae925a8-af1c-45c8-8eeb-0331b4954f68",
+        "hole_clearance|95605000|89100000|3b021447-6aa0-4946-84ff-b3e1f85743a5|1714794a-4d77-44c2-9707-35792f6382fb",
+        "hole_clearance|95605000|89100000|3b021447-6aa0-4946-84ff-b3e1f85743a5|abc86b87-29a2-4ec2-8133-738c0ce604a2",
+        "hole_clearance|95605000|94900000|ea781547-9d2b-43b5-b979-0353a1734788|1c9eb3e0-20c4-4740-80d7-4dee1cd26e2c",
+        "hole_clearance|95605000|94900000|ea781547-9d2b-43b5-b979-0353a1734788|77b67360-69cf-48f2-adcd-dbe1ad2d62f6"
+      ],
       "meta": {
         "version": 2
       },
@@ -180,8 +197,35 @@
         0.2,
         0.25,
         0.3,
+        0.3776,
         0.5
       ],
+      "tuning_pattern_settings": {
+        "diff_pair_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 1.0
+        },
+        "diff_pair_skew_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        },
+        "single_track_defaults": {
+          "corner_radius_percentage": 80,
+          "corner_style": 1,
+          "max_amplitude": 1.0,
+          "min_amplitude": 0.2,
+          "single_sided": false,
+          "spacing": 0.6
+        }
+      },
       "via_dimensions": [
         {
           "diameter": 0.0,
@@ -198,6 +242,13 @@
       ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
     },
     "layer_presets": [],
     "viewports": []
@@ -480,8 +531,8 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.15,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -490,7 +541,7 @@
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3493,
+        "track_width": 0.29337,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -498,16 +549,16 @@
       {
         "bus_width": 12,
         "clearance": 0.15,
-        "diff_pair_gap": 0.15,
+        "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2395,
+        "diff_pair_width": 0.261112,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2395,
+        "track_width": 0.261112,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -533,7 +584,17 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "/LNA_IN": "rgb(0, 255, 0)",
+      "/USB+": "rgb(0, 255, 0)",
+      "/USB-": "rgb(0, 255, 0)",
+      "/USB_CONN+": "rgb(0, 255, 0)",
+      "/USB_CONN-": "rgb(0, 255, 0)",
+      "/USB_FIL+": "rgb(0, 255, 0)",
+      "/USB_FIL-": "rgb(0, 255, 0)",
+      "Net-(C17-Pad1)": "rgb(0, 255, 0)",
+      "Net-(C19-Pad1)": "rgb(0, 255, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
       {
@@ -591,6 +652,18 @@
       {
         "netclass": "5V Power",
         "pattern": "Net-(D1-A)"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "*C15-Pad1*"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "*C19-Pad1*"
+      },
+      {
+        "netclass": "USB Data",
+        "pattern": "*USB_FIL*"
       }
     ]
   },
@@ -599,8 +672,11 @@
       "gencad": "",
       "idf": "",
       "netlist": "WiSer-TTL.net",
+      "plot": "",
+      "pos_files": "",
       "specctra_dsn": "",
       "step": "WiSer-TTL.step",
+      "svg": "",
       "vrml": "png/png.wrl"
     },
     "page_layout_descr_file": ""
